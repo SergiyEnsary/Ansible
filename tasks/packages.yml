@@ -1,6 +1,10 @@
 - name: Install git
   apt: name=git-all
 
+- name: Pull from Git
+  git: repo=git@github.com/SergiyEnsary/Ansible.git
+       dest=/path/to/destination
+
 - name: Install python
   apt: name=python-devel
 
