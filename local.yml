@@ -4,6 +4,8 @@
     - name: update repositories
       apt: update_cache=yes
       changed_when: False
+    - name: install git
+      apt: name=git-all
 
   tasks:
     - include: tasks/users.yml
