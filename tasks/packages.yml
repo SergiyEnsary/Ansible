@@ -1,7 +1,11 @@
 - name: Install packages
-    apt: name={{item}}
-    with_items:
-      - "{{htop}}"
-      - "{{mc}}"
-      - "{{tmux}}"
-      - "{{npm}}"
+    apt: name=htop
+
+- name: Install packages
+    apt: name=mc
+
+- name: Install packages
+    apt: name=tmux
+
+- name: Install packages
+    apt: name=npm
