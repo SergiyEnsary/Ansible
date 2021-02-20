@@ -1,3 +1,9 @@
+- name: Install git
+  apt: name=git-all
+
+- name: Install python
+  apt: name=python-devel
+
 - name: Install htop
   apt: name=htop
 
