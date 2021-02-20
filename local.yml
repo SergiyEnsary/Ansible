@@ -5,7 +5,7 @@
       apt: update_cache=yes
       changed_when: False
     - name: install git
-      apt: name=git-all
+      apt: name=git
 
   tasks:
     - include: tasks/users.yml
